@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agentic — Home</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 760px; margin: 3rem auto; padding: 0 1.2rem; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+  code { background: #f2f2f2; padding: 0.1em 0.35em; border-radius: 4px; }
+  .footer { margin-top: 3rem; font-size: 0.85rem; color: #555; border-top: 1px solid #ddd; padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <h1>agentic</h1>
+  <p><strong>agentic</strong> is a personal automation assistant ("Hermes") operated by its owner. It
+  connects the owner's own Google accounts to a single local agent so that the owner can search and
+  read their own email, calendar, contacts and files across accounts, and (when explicitly enabled)
+  draft or send email on the owner's behalf.</p>
+
+  <h2>What this application does</h2>
+  <ul>
+    <li>Uses <strong>Google OAuth 2.0</strong> (public "installed app" flow, PKCE, loopback redirect) to
+        authenticate the owner's own accounts.</li>
+    <li>Reads the owner's Gmail, Calendar, Drive, Docs, Sheets and Contacts data to provide a single
+        unified search and read interface.</li>
+    <li>Only the owner's explicitly connected accounts are accessed; the application never accesses
+        other users' data.</li>
+    <li>Write operations (sending mail) are <strong>disabled by default</strong> and only enabled after
+        explicit per-account approval.</li>
+  </ul>
+
+  <h2>Google services accessed</h2>
+  <ul>
+    <li>Gmail (read, search; send only where explicitly enabled)</li>
+    <li>Google Calendar</li>
+    <li>Google Drive (files and metadata)</li>
+    <li>Google Docs</li>
+    <li>Google Sheets</li>
+    <li>Google Contacts</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">Privacy Policy</a> for details on data access, storage, sharing,
+  retention and deletion.</p>
+
+  <h2>Contact</h2>
+  <p>This is a personal application operated by its owner. For questions, contact the application
+  owner directly.</p>
+
+  <div class="footer">agentic — personal automation assistant · Home</div>
+</body>
+</html>
